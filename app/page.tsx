@@ -24,7 +24,7 @@ export default function Home() {
           transition={{ delay: 0.2 }}
           className="text-5xl font-bold"
         >
-          Hi, I a&#39;m Abdelwadoud
+          Hi, I&#39;m Abdelwadoud
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0 }}

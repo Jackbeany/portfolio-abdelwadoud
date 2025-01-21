@@ -33,31 +33,16 @@ export const metadata = {
   
     return (
       <div className="max-w-4xl mx-auto px-4 py-16">
-        <section className="mb-12">
-          <h1 className="text-4xl font-bold mb-6">About Me</h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-            Hello! I&#39;m Abdelwadoud, a 19-year-old student passionate about technology and creativity.
-            My journey in programming and design started several years ago, and I&#39;ve been continuously
-            developing my skills and expanding my knowledge ever since.
-          </p>
-                  {/* What I Do */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold">What I Do</h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              I specialize in creating modern web applications using the latest technologies. 
-              From responsive designs to efficient backend solutions, I bring ideas to life 
-              through code.
+        <section className="mb-12 flex items-center">
+          <img src="/profiel foto.jpg" alt="Abdelwadoud" className="w-32 h-32 rounded-lg shadow-md mr-6" />
+          <div>
+            <h1 className="text-4xl font-bold mb-6">About Me</h1>
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
+              Hello! I&#39;m Abdelwadoud, a 19-year-old student passionate about technology and creativity.
+              My journey in programming and design started several years ago, and I&#39;ve been continuously
+              developing my skills and expanding my knowledge ever since.
             </p>
           </div>
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold">My Focus</h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Currently focusing on expanding my knowledge in web development and exploring 
-              new technologies. Always eager to learn and take on new challenges.
-            </p>
-          </div>
-        </div>
         </section>
   
         <section className="mb-12">
