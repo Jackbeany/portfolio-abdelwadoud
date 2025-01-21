@@ -44,7 +44,16 @@ export const metadata = {
             </p>
           </div>
         </section>
-  
+        <section>
+          <h2 className="text-2xl font-bold mb-6">What I Can Do For You</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 ">
+            With my technical knowledge and creative approach, I help develop functional
+            and attractive digital solutions. Whether it&#39;s a dynamic website,
+            efficient backend, or engaging user interface, I ensure the end result
+            meets your expectations.
+          </p>
+        </section>
+
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Technical Skills</h2>
   
@@ -94,15 +103,25 @@ export const metadata = {
             ))}
           </div>
         </section>
-  
-        <section>
-          <h2 className="text-2xl font-bold mb-6">What I Can Do For You</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300">
-            With my technical knowledge and creative approach, I help develop functional
-            and attractive digital solutions. Whether it&#39;s a dynamic website,
-            efficient backend, or engaging user interface, I ensure the end result
-            meets your expectations.
-          </p>
+          
+        <section className="mb-12">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <h2 className="text-2xl font-bold">What I Do</h2>
+              <p className="text-gray-600 dark:text-gray-300">
+                I specialize in creating modern web applications using the latest technologies. 
+                From responsive designs to efficient backend solutions, I bring ideas to life 
+                through code.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h2 className="text-2xl font-bold">My Focus</h2>
+              <p className="text-gray-600 dark:text-gray-300">
+                Currently focusing on expanding my knowledge in web development and exploring 
+                new technologies. Always eager to learn and take on new challenges.
+              </p>
+            </div>
+          </div>
         </section>
       </div>
     );
