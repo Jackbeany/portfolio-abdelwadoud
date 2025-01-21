@@ -44,9 +44,9 @@ export const metadata = {
             </p>
           </div>
         </section>
-        <section>
+        <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">What I Can Do For You</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 ">
+          <p className="text-lg text-gray-600 dark:text-gray-300">
             With my technical knowledge and creative approach, I help develop functional
             and attractive digital solutions. Whether it&#39;s a dynamic website,
             efficient backend, or engaging user interface, I ensure the end result
