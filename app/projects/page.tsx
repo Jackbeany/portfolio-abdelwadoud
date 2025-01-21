@@ -6,7 +6,6 @@ export default function Projects() {
       technologies: ["React", "TypeScript"],
       link: "#"
     },
-    // Voeg meer projecten toe
   ]
 
   return (

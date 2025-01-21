@@ -1,10 +1,8 @@
-// app/about/page.tsx (of waar je jouw About-pagina definieert)
 export const metadata = {
     title: "About Me - Abdelwadoud",
     description: "Learn more about Abdelwadoud, a passionate 19-year-old student skilled in technology and creativity.",
   };
   
-  // Deze functie wordt uitgevoerd op de server
   async function fetchPageData() {
     const skills = {
       languages: [
@@ -31,7 +29,6 @@ export const metadata = {
   }
   
   export default async function About() {
-    // Laad de data op de server
     const { skills, hobbies } = await fetchPageData();
   
     return (
@@ -43,6 +40,24 @@ export const metadata = {
             My journey in programming and design started several years ago, and I&apos;ve been continuously
             developing my skills and expanding my knowledge ever since.
           </p>
+                  {/* What I Do */}
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-4">
+            <h2 className="text-2xl font-bold">What I Do</h2>
+            <p className="text-gray-600 dark:text-gray-300">
+              I specialize in creating modern web applications using the latest technologies. 
+              From responsive designs to efficient backend solutions, I bring ideas to life 
+              through code.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <h2 className="text-2xl font-bold">My Focus</h2>
+            <p className="text-gray-600 dark:text-gray-300">
+              Currently focusing on expanding my knowledge in web development and exploring 
+              new technologies. Always eager to learn and take on new challenges.
+            </p>
+          </div>
+        </div>
         </section>
   
         <section className="mb-12">
