@@ -36,8 +36,8 @@ export const metadata = {
         <section className="mb-12">
           <h1 className="text-4xl font-bold mb-6">About Me</h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-            Hello! I&apos;m Abdelwadoud, a 19-year-old student passionate about technology and creativity.
-            My journey in programming and design started several years ago, and I&apos;ve been continuously
+            Hello! I&#39;m Abdelwadoud, a 19-year-old student passionate about technology and creativity.
+            My journey in programming and design started several years ago, and I&#39;ve been continuously
             developing my skills and expanding my knowledge ever since.
           </p>
                   {/* What I Do */}
@@ -114,7 +114,7 @@ export const metadata = {
           <h2 className="text-2xl font-bold mb-6">What I Can Do For You</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300">
             With my technical knowledge and creative approach, I help develop functional
-            and attractive digital solutions. Whether it&apos;s a dynamic website,
+            and attractive digital solutions. Whether it&#39;s a dynamic website,
             efficient backend, or engaging user interface, I ensure the end result
             meets your expectations.
           </p>

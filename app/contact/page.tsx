@@ -30,7 +30,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
               >
-                Bekijk mijn LinkedIn profiel
+                View my LinkedIn profile
               </a>
             </div>
           </div>
