@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Abdelwadoud Jalloul - Portfolio",
   description: "Personal portfolio showcasing my projects and experience",
+  keywords: "Portfolio, Abdelwadoud Jalloul, Abdelwadoud, Jalloul, Developer, Software developer, Frontend Developer, Backend Developer, Frontend, Backend",
 };
 
 export default function RootLayout({

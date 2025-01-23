@@ -6,7 +6,7 @@ export default function Projects() {
       description: "Dit is een simpele image viewer die gemaakt is met Javascript",
       technologies: ["Javascript"],
       link: "/projects/1",
-      image: "/images/image viewer.png",
+      image: "image viewer.png",
       fullDescription: "Dit is een simpele image viewer die gemaakt is met Javascript. De applicatie stelt gebruikers in staat om afbeeldingen te bekijken en te beheren in een gebruiksvriendelijke interface. Het project is volledig ontwikkeld in vanilla Javascript, wat aantoont dat krachtige functionaliteit ook zonder frameworks gerealiseerd kan worden. Gebruikers kunnen door afbeeldingen navigeren, in- en uitzoomen, en de weergave aanpassen naar hun voorkeuren."
     },
   ];
