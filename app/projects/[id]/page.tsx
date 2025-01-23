@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import { Metadata } from 'next';
 
 const projects = [
     {
@@ -13,8 +14,31 @@ const projects = [
     },
 ];
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects.find(p => p.id === params.id);
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ id: string }> 
+}): Promise<Metadata> {
+  const resolvedParams = await params;
+  const project = projects.find(p => p.id === resolvedParams.id);
+  
+  if (!project) {
+    notFound();
+  }
+
+  return {
+    title: project.title,
+    description: project.description,
+  };
+}
+
+export default async function ProjectPage({
+  params
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const resolvedParams = await params;
+  const project = projects.find(p => p.id === resolvedParams.id);
 
   if (!project) {
     notFound();
