@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { Metadata } from 'next';
-
+import projectPic from '../../../public/Image viewer.png'
 const projects = [
     {
         id: "1",
@@ -49,7 +49,7 @@ export default async function ProjectPage({
       <h1 className="text-4xl font-bold mb-8">{project.title}</h1>
       <div className="relative w-full h-[400px] mb-8">
         <Image
-          src={project.image}
+          src={projectPic}
           alt={project.title}
           fill
           className="object-cover rounded-lg"
