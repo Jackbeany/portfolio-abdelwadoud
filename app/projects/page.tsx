@@ -1,12 +1,15 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Project 1",
-      description: "Description of project 1",
-      technologies: ["React", "TypeScript"],
-      link: "#"
+      id: "1",
+      title: "Image viewer",
+      description: "Dit is een simpele image viewer die gemaakt is met Javascript",
+      technologies: ["Javascript"],
+      link: "/projects/1",
+      image: "/images/image viewer.png",
+      fullDescription: "Dit is een simpele image viewer die gemaakt is met Javascript. De applicatie stelt gebruikers in staat om afbeeldingen te bekijken en te beheren in een gebruiksvriendelijke interface. Het project is volledig ontwikkeld in vanilla Javascript, wat aantoont dat krachtige functionaliteit ook zonder frameworks gerealiseerd kan worden. Gebruikers kunnen door afbeeldingen navigeren, in- en uitzoomen, en de weergave aanpassen naar hun voorkeuren."
     },
-  ]
+  ];
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
@@ -41,5 +44,5 @@ export default function Projects() {
         ))}
       </div>
     </div>
-  )
+  );
 } 
