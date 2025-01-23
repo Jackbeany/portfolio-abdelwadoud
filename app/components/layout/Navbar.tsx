@@ -21,9 +21,6 @@ const Navbar = () => {
       animate={{ y: 0 }}
       className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between"
     >
-      <Link href="/" className="font-bold text-xl">
-        Abdelwadoud
-      </Link>
       <nav className="flex items-center gap-6">
         {navItems.map((item) => (
           <motion.div
