@@ -46,7 +46,7 @@ export const metadata = {
         <div className="flex flex-col md:flex-row items-start gap-6">
           <div className="flex-shrink-0">
             <Image
-              src="/Abdelwadoud.jpg"
+              src="/about me/Abdelwadoud.jpg"
               alt="Abdelwadoud portrait"
               width={200}
               height={200}
