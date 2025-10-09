@@ -24,7 +24,7 @@ export default function Home() {
           transition={{ delay: 0.2 }}
           className="text-5xl font-bold"
         >
-          Hi, I&#39;m Abdelwadoud
+          Hi, I&apos;m Abdelwadoud 👋
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0 }}
@@ -32,7 +32,8 @@ export default function Home() {
           transition={{ delay: 0.4 }}
           className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl"
         >
-        Welcome to my website! Feel free to explore and don&#39;t hesitate to reach out if you have any questions.
+          A 19-year-old student passionate about technology and creativity. 
+          I transform ideas into engaging digital experiences.
         </motion.p>
         <motion.div 
           initial={{ opacity: 0 }}
@@ -62,6 +63,24 @@ export default function Home() {
         transition={{ delay: 0.8 }}
         className="space-y-12"
       >
+        {/* What I Do */}
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-4">
+            <h2 className="text-2xl font-bold">What I Do</h2>
+            <p className="text-gray-600 dark:text-gray-300">
+              I specialize in creating modern web applications using the latest technologies. 
+              From responsive designs to efficient backend solutions, I bring ideas to life 
+              through code.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <h2 className="text-2xl font-bold">My Focus</h2>
+            <p className="text-gray-600 dark:text-gray-300">
+              Currently focusing on expanding my knowledge in web development and exploring 
+              new technologies. Always eager to learn and take on new challenges.
+            </p>
+          </div>
+        </div>
 
         {/* Skills Overview */}
         <div className="space-y-4">

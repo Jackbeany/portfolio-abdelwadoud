@@ -6,7 +6,7 @@ export async function POST(request: Request) {
     const data = await request.json();
     const { name, email, message } = data;
 
-    // Validatie van vereiste velden
+    // Validate required fields
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: 'Missing required fields: name, email, or message.' },
@@ -14,21 +14,21 @@ export async function POST(request: Request) {
       );
     }
 
-    // Nodemailer transporter configureren
+    // Configure nodemailer transporter
     const transporter = nodemailer.createTransport({
       host: 'smtp-relay.brevo.com',
       port: 587,
-      secure: false, // TLS wordt gebruikt
+      secure: false, // TLS is used
       auth: {
-        user: process.env.BREVO_EMAIL, // Gebruikersnaam uit Brevo (SMTP-login)
+        user: process.env.BREVO_EMAIL, // Username from Brevo (SMTP-login)
         pass: process.env.BREVO_API_KEY, // Brevo API Key (Master Password)
       },
     });
 
-    // E-mail opties configureren
+    // Configure email options
     const mailOptions = {
-      from: process.env.BREVO_EMAIL, // E-mail van afzender (moet geverifieerd zijn in Brevo)
-      to: process.env.BREVO_EMAIL, // E-mail ontvanger (kan jezelf zijn)
+      from: process.env.BREVO_EMAIL, // Sender email (must be verified in Brevo)
+      to: process.env.BREVO_EMAIL, // Recipient email (can be yourself)
       subject: `Portfolio Contact: ${name}`,
       text: `
         Name: ${name}
@@ -46,10 +46,10 @@ export async function POST(request: Request) {
       `,
     };
 
-    // E-mail verzenden
+    // Send email
     await transporter.sendMail(mailOptions);
 
-    // Succesvolle respons
+    // Successful response
     return NextResponse.json(
       { message: 'Email sent successfully!' },
       { status: 200 }
