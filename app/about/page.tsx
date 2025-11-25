@@ -55,7 +55,7 @@ export const metadata = {
         <div className="md:flex md:items-start md:gap-6">
           <div className="float-left mr-4 mb-4 w-28 h-28 rounded-lg overflow-hidden shadow-lg md:float-none md:mr-0 md:mb-0 md:w-[200px] md:h-[200px] md:flex-shrink-0">
             <Image
-              src="/Abdelwadoud.jpg"
+              src="/about_me/Abdelwadoud.jpg"
               alt="Abdelwadoud portrait"
               width={200}
               height={200}
@@ -86,7 +86,7 @@ export const metadata = {
                   <div key={skill.name} className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg flex items-center gap-3">
                     <div className="flex-shrink-0">
                       <Image
-                        src={`/about me/logos/${skill.logo}`}
+                        src={`/about_me/logos/${skill.logo}`}
                         alt={`${skill.name} logo`}
                         width={20}
                         height={20}
@@ -106,7 +106,7 @@ export const metadata = {
                   <div key={framework.name} className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg flex items-center gap-3">
                     <div className="flex-shrink-0">
                       <Image
-                        src={`/about me/logos/${framework.logo}`}
+                        src={`/about_me/logos/${framework.logo}`}
                         alt={`${framework.name} logo`}
                         width={20}
                         height={20}
@@ -126,7 +126,7 @@ export const metadata = {
                   <div key={tool.name} className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg flex items-center gap-3">
                     <div className="flex-shrink-0">
                       <Image
-                        src={`/about me/logos/${tool.logo}`}
+                        src={`/about_me/logos/${tool.logo}`}
                         alt={`${tool.name} logo`}
                         width={20}
                         height={20}
@@ -146,7 +146,7 @@ export const metadata = {
                   <div key={other.name} className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg flex items-center gap-3">
                     <div className="flex-shrink-0">
                       <Image
-                        src={`/about me/logos/${other.logo}`}
+                        src={`/about_me/logos/${other.logo}`}
                         alt={`${other.name} logo`}
                         width={20}
                         height={20}
