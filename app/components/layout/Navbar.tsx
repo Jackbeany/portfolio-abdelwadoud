@@ -19,12 +19,12 @@ const Navbar = () => {
     <motion.div 
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between"
+      className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-center sm:justify-between"
     >
-      <Link href="/" className="font-bold text-xl">
+      <Link href="/" className="hidden sm:block font-bold text-xl">
         Abdelwadoud
       </Link>
-      <nav className="flex items-center gap-6">
+      <nav className="flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-sm sm:text-base">
         {navItems.map((item) => (
           <motion.div
             key={item.path}

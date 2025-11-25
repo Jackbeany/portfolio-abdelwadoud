@@ -4,6 +4,16 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 export default function Home() {
+  const birthDate = new Date('2005-11-13')
+  const today = new Date()
+  const age =
+    today.getFullYear() -
+    birthDate.getFullYear() -
+    (today <
+    new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate())
+      ? 1
+      : 0)
+
   const skills = [
     'C#', 'PHP', 'JavaScript', 'Python', 'SQL', 'HTML & CSS',
     'Laravel', 'Next.js', 'Git', 'Adobe XD'
@@ -32,7 +42,7 @@ export default function Home() {
           transition={{ delay: 0.4 }}
           className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl"
         >
-          A 19-year-old student passionate about technology and creativity. 
+          A {age}-year-old student passionate about technology and creativity. 
           I transform ideas into engaging digital experiences.
         </motion.p>
         <motion.div 

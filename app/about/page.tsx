@@ -39,30 +39,40 @@ export const metadata = {
   export default async function About() {
     // Laad de data op de server
     const { skills, hobbies } = await fetchPageData();
+    const birthDate = new Date('2005-11-13')
+  const today = new Date()
+  const age =
+    today.getFullYear() -
+    birthDate.getFullYear() -
+    (today <
+    new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate())
+      ? 1
+      : 0)
   
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
       <section className="mb-12">
-        <div className="flex flex-col md:flex-row items-start gap-6">
-          <div className="flex-shrink-0">
+        <div className="md:flex md:items-start md:gap-6">
+          <div className="float-left mr-4 mb-4 w-28 h-28 rounded-lg overflow-hidden shadow-lg md:float-none md:mr-0 md:mb-0 md:w-[200px] md:h-[200px] md:flex-shrink-0">
             <Image
               src="/Abdelwadoud.jpg"
               alt="Abdelwadoud portrait"
               width={200}
               height={200}
-              className="rounded-lg object-cover w-[200px] h-[200] md:w-[200px] md:h-[200px]"
+              className="h-full w-full object-cover"
               priority
             />
           </div>
           <div>
             <h1 className="text-4xl font-bold mb-6">About Me</h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              Hello! I&apos;m Abdelwadoud, a 19-year-old student passionate about technology and creativity.
+              Hello! I&apos;m Abdelwadoud, a {age}-year-old student passionate about technology and creativity.
               My journey in programming and design started several years ago, and I&apos;ve been continuously
               developing my skills and expanding my knowledge ever since.
             </p>
           </div>
         </div>
+        <div className="clear-both md:hidden" />
       </section>
   
         <section className="mb-12">
